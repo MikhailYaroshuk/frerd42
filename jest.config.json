@@ -1,0 +1,21 @@
+{
+	"testEnvironment": "jsdom",
+	"setupFilesAfterEnv": ["<rootDir>/test.config.tsx"],
+	"moduleNameMapper": {
+		"\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|pdf|xlsx)$": "<rootDir>/__mocks__/files.mock.ts",
+		"\\.(css|scss|less)$": "identity-obj-proxy",
+		"^components/(.*)$": "<rootDir>/src/components/$1"
+	},
+	"collectCoverageFrom": [
+		"src/components/**/*.{ts,tsx}",
+		"src/hooks/**/*.{ts,tsx}",
+		"src/pages/**/*.{ts,tsx}",
+		"src/services/**/*.{ts,tsx}",
+		"src/utils/**/*.{ts,tsx}"
+	],
+	"transform": {
+    "^.+\\.(ts|tsx)$": "ts-jest"
+  },
+  "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+  "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
+}
