@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm install` or `npm start --force`
+### `npm install` or `npm install --force`
 
 after run:
 
