@@ -11,7 +11,7 @@
       flex-wrap: wrap;
   
       .task-text {
-        font-size: 18px;
+        font-size: 16px;
         max-width: 70%;
         word-break: break-word; 
 
@@ -35,26 +35,32 @@
           }
   
           &.mark-as-done {
-            background: #4caf50;
+            background: #0AB5A2;
             color: #fff;
 
             &:hover {
-                background: #3e8e41;
+                background: #07a593;
+                transition: all 0.3s;
               }
           }
   
           &.delete {
-            background: #f44336;
+            background: #D64747;
             color: #fff;
+            margin-right: 0;
 
             &:hover {
-                background: #e61f10;
+                background: #B8333F;
+                transition: all 0.3s;
               }
           }
 
           &.mark-as-undone {
+            background: #DCE2F2;
+
             &:hover {
               background: #cccccc;
+              transition: all 0.3s;
             }
           }
         }
@@ -65,5 +71,41 @@
       font-size: 24px;
       font-weight: bold;
       margin: 16px 0;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .task-list {
+      .title{
+        font-size: 20px;
+        margin: 10px 0;
+      }
+
+      .task {
+        padding: 10px;
+        display: block;
+    
+        .task-text {
+          display: inline-block;
+          font-size: 14px;
+          max-width: 100%;
+          margin-bottom: 10px;
+        }
+
+        .task-buttons {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+    .add-task {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .task-input {
+      font-size: 14px;
+      margin: 0;
+      margin-bottom: 10px;
     }
   }

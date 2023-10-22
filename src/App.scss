@@ -14,3 +14,19 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .App .tasks-wrapper {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .App .tasks-wrapper {
+    width: 90%;
+
+    h1{
+      font-size: 24px;
+     }
+  }
+}

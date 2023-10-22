@@ -14,16 +14,42 @@
 
   .add-button {
     height: 36px;
-    width: 15%;
     padding: 8px 16px;
     font-size: 16px;
-    background: #007bff;
+    background: #0971f1;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    min-width: 75px;
 
     &:hover {
-      background: #0056b3;
+      background: #0461d3;
+      transition: all 0.3s;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .add-button {
+      font-size: 14px;
+      width: 15%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .add-task {
+      flex-direction: column;
+    }
+  
+    .task-input {
+      font-size: 14px;
+      margin: 0;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  
+    .add-button {
+      font-size: 14px;
+      width: 50%;
     }
   }

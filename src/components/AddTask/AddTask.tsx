@@ -17,7 +17,10 @@ const AddTask: React.FC = () => {
 
   return (
     <form className='add-task' onSubmit={handleSubmit}>
-      <input type="text" value={taskText} className="task-input" placeholder="Add a new task..." onChange={(e) => setTaskText(e.target.value)} />
+      <input type="text" value={taskText} className="task-input" 
+        placeholder="Add a new task..." 
+        onChange={(e) => setTaskText(e.target.value)}
+      />
       <button className="add-button" type="submit">Add</button>
     </form>
   );
